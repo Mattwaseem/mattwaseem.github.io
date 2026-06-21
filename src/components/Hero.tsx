@@ -126,7 +126,7 @@ export default function Hero() {
       
       <div className="relative z-10 max-w-3xl">
         <div className="inline-block font-mono text-xs md:text-sm text-muted-foreground bg-card/50 backdrop-blur-sm border border-border px-3 py-1.5 rounded-full mb-8">
-          <span className="text-cyan animate-pulse">●</span> // currently:currently: Associate Bioinformatic Specialist @ La Jolla Institute of Immunology
+          <span className="text-cyan animate-pulse">●</span> // currently: Associate Bioinformatic Specialist @ La Jolla Institute of Immunology
         </div>
         
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-display font-bold tracking-tight mb-6">
