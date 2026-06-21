@@ -126,7 +126,7 @@ export default function Hero() {
       
       <div className="relative z-10 max-w-3xl">
         <div className="inline-block font-mono text-xs md:text-sm text-muted-foreground bg-card/50 backdrop-blur-sm border border-border px-3 py-1.5 rounded-full mb-8">
-          <span className="text-cyan animate-pulse">●</span> // currently: T-cell AIM pipeline @ La Jolla Institute of Immunology
+          <span className="text-cyan animate-pulse">●</span> // currently:currently: Associate Bioinformatic Specialist @ La Jolla Institute of Immunology
         </div>
         
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-display font-bold tracking-tight mb-6">
@@ -134,11 +134,11 @@ export default function Hero() {
         </h1>
         
         <h2 className="text-xl md:text-2xl lg:text-3xl text-muted-foreground mb-8 max-w-2xl leading-relaxed">
-          Computational chemistry <span className="text-cyan">×</span> immunology <span className="text-violet">·</span> pre-med
+          Computational chemistry <span className="text-cyan">×</span> immunology <span className="text-violet">·</span> software engineering
         </h2>
         
         <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-2xl mb-12">
-          I build at the intersection of molecular biology and software engineering — developing analysis pipelines, machine learning assays, and research tools that accelerate drug discovery and immunology research. Currently an Associate Bioinformatics Researcher at the La Jolla Institute of Immunology working on NIH-funded T-cell projects, and pursuing my Master's in Software Engineering & Molecular Sciences at UC Berkeley.
+          My journey into science started in the back of an ambulance and ultimately led me to the intersection of molecular biology and software engineering. I find myself driven by the gap between frontline patient care and the computational research that makes new treatments possible. Currently, as an Associate Bioinformatics Specialist at the La Jolla Institute for Immunology, I develop analysis pipelines and tools to advance NIH-funded research. I approach complex biological data not just as code, but as the foundational stepping stone to future clinical breakthroughs.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4">

@@ -19,7 +19,7 @@ export default function Writing() {
           </p>
           
           <a 
-            href="#" 
+            href="https://substack.com/@mattwaseem" 
             className="inline-flex items-center gap-3 px-6 py-3 rounded-xl bg-background border border-border text-foreground hover:text-amber hover:border-amber transition-all group/btn shadow-sm"
           >
             <span className="font-medium">Read on Substack</span>

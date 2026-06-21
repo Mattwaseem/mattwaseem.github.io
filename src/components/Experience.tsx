@@ -2,7 +2,7 @@ export default function Experience() {
   const experiences = [
     {
       company: "La Jolla Institute of Immunology",
-      role: "Associate Bioinformatics Researcher",
+      role: "Associate Bioinformatic Specialist",
       date: "Sep 2024 – present",
       bullets: [
         "Designed 25-color spectral flow cytometry panel used across multiple NIH-funded projects",
