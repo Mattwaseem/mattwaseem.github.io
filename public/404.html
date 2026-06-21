@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      // GitHub Pages SPA redirect trick.
+      // Converts a path like /projects into /?p=/projects so the
+      // main index.html can pick it up and restore the real URL.
+      var l = window.location;
+      l.replace(
+        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+        l.pathname.split('/').slice(0, 1).join('/') + '/?p=' +
+        encodeURIComponent(l.pathname + l.search) +
+        '&q=' + encodeURIComponent(l.hash.slice(1))
+      );
+    </script>
+  </head>
+  <body></body>
+</html>

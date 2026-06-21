@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500&display=swap');
+@import "tailwindcss";
+@import "tw-animate-css";
+@plugin "@tailwindcss/typography";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+  --color-card-border: hsl(var(--card-border));
+
+  --color-popover: hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+  --color-popover-border: hsl(var(--popover-border));
+
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+  --color-primary-border: var(--primary-border);
+
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+  --color-secondary-border: var(--secondary-border);
+
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+  --color-muted-border: var(--muted-border);
+
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+  --color-accent-border: var(--accent-border);
+
+  --color-destructive: hsl(var(--destructive));
+  --color-destructive-foreground: hsl(var(--destructive-foreground));
+  --color-destructive-border: var(--destructive-border);
+
+  --color-cyan: hsl(172 66% 50%);
+  --color-violet: hsl(246 100% 75%);
+  --color-amber: hsl(36 90% 66%);
+
+  --font-sans: 'Inter', sans-serif;
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+/* Base Theme (Always Dark) */
+:root {
+  --background: 220 29% 6%; /* #0B0E14 */
+  --foreground: 220 33% 93%; /* #E6EAF2 */
+  
+  --border: 219 25% 18%; /* #222A39 */
+  --input: 219 25% 18%;
+  --ring: 172 66% 50%;
+  
+  --card: 221 27% 12%; /* #161B26 */
+  --card-foreground: 220 33% 93%;
+  --card-border: 219 25% 18%;
+
+  --popover: 221 27% 12%;
+  --popover-foreground: 220 33% 93%;
+  --popover-border: 219 25% 18%;
+
+  --primary: 172 66% 50%; /* Cyan #2DD4BF */
+  --primary-foreground: 220 29% 6%;
+  
+  --secondary: 246 100% 75%; /* Violet #8B7FFF */
+  --secondary-foreground: 220 33% 93%;
+
+  --muted: 219 25% 18%;
+  --muted-foreground: 219 16% 60%; /* #8A94A6 */
+
+  --accent: 36 90% 66%; /* Amber #F5B85C */
+  --accent-foreground: 220 29% 6%;
+
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 220 33% 93%;
+
+  --radius: 12px;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply font-sans antialiased text-foreground bg-background;
+    background: linear-gradient(to bottom, #0B0E14, #10141C);
+    min-height: 100dvh;
+    scroll-behavior: smooth;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    font-weight: 500;
+  }
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 20px rgba(45, 212, 191, 0.3);
+  }
+  
+  .border-glow-hover {
+    transition: all 0.3s ease;
+  }
+  
+  .border-glow-hover:hover {
+    border-color: #2DD4BF;
+    box-shadow: inset 0 1px 0 rgba(45, 212, 191, 0.2), 0 0 15px rgba(45, 212, 191, 0.1);
+  }
+  
+  .border-glow-violet-hover:hover {
+    border-color: #8B7FFF;
+    box-shadow: inset 0 1px 0 rgba(139, 127, 255, 0.2), 0 0 15px rgba(139, 127, 255, 0.1);
+  }
+
+  .nav-link {
+    @apply text-muted-foreground transition-colors hover:text-amber;
+  }
+  .nav-link.active {
+    @apply text-foreground font-medium;
+  }
+  
+  .section-label {
+    @apply font-mono text-xs text-muted-foreground uppercase tracking-[0.15em] mb-6 flex items-center gap-4;
+  }
+  .section-label::after {
+    content: '';
+    @apply h-[1px] bg-border flex-1 max-w-[40px];
+  }
+  
+  .link-hover {
+    @apply transition-colors hover:text-amber decoration-amber hover:underline underline-offset-4;
+  }
+}
