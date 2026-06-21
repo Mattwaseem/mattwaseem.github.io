@@ -16,19 +16,19 @@ type Photo = {
 // Drop the file in public/photos/, then reference it as "/photos/filename.jpg"
 const PHOTOS: Photo[] = [
   {
-    src: "/photos/placeholder-1.jpg",
-    alt: "Lab work at La Jolla Institute of Immunology",
-    caption: "Flow cytometry setup — La Jolla Institute of Immunology",
+    src: "/photos/profile.jpg",
+    alt: "Matt Waseem",
+    caption: "",
   },
   {
-    src: "/photos/placeholder-2.jpg",
+    src: "/photos/graduation_dinner.jpg",
+    alt: "Graduation dinner",
+    caption: "Master's graduation — UC Berkeley",
+  },
+  {
+    src: "/photos/oaxaca.png",
     alt: "Field research in Oaxaca, Mexico",
     caption: "Public health field work — Oaxaca, Mexico",
-  },
-  {
-    src: "/photos/placeholder-3.jpg",
-    alt: "Professional headshot",
-    caption: "",
   },
 ];
 
