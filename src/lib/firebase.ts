@@ -21,4 +21,4 @@ export const googleProvider = new GoogleAuthProvider();
 
 // The only account allowed to write habit data.
 // Leave empty until your FIRST sign-in, then paste your UID here.
-export const OWNER_UID = "";
+export const OWNER_UID = "RFbFUUSwBLgSwnfYarY2E6RWXry2";
