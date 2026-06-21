@@ -5,6 +5,7 @@ import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
 import Writing from "@/components/Writing";
 import Footer from "@/components/Footer";
+import HabitTracker from "@/components/HabitTracker";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <Hero />
         <About />
         <Experience />
+        <HabitTracker />
         <Projects />
         <Writing />
       </main>
