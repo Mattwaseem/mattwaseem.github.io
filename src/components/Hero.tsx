@@ -126,7 +126,7 @@ export default function Hero() {
       
       <div className="relative z-10 max-w-3xl">
         <div className="inline-block font-mono text-xs md:text-sm text-muted-foreground bg-card/50 backdrop-blur-sm border border-border px-3 py-1.5 rounded-full mb-8">
-          <span className="text-cyan animate-pulse">●</span> // currently: Associate Bioinformatic Specialist @ La Jolla Institute of Immunology
+          <span className="text-cyan animate-pulse">●</span> // Associate Bioinformatic Specialist @ La Jolla Institute of Immunology
         </div>
         
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-display font-bold tracking-tight mb-6">
@@ -134,11 +134,14 @@ export default function Hero() {
         </h1>
         
         <h2 className="text-xl md:text-2xl lg:text-3xl text-muted-foreground mb-8 max-w-2xl leading-relaxed">
-          Computational chemistry <span className="text-cyan">×</span> immunology <span className="text-violet">·</span> software engineering
+          Computational chemistry <span className="text-cyan">×</span> immunology <span className="text-violet">·</span>
         </h2>
         
         <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-2xl mb-12">
-          My journey into science started in the back of an ambulance and ultimately led me to the intersection of molecular biology and software engineering. I find myself driven by the gap between frontline patient care and the computational research that makes new treatments possible. Currently, as an Associate Bioinformatics Specialist at the La Jolla Institute for Immunology, I develop analysis pipelines and tools to advance NIH-funded research. I approach complex biological data not just as code, but as the foundational stepping stone to future clinical breakthroughs.
+          My journey into science started in the back of an ambulance and ultimately led me to the intersection of molecular biology and software engineering.
+          I find myself driven by the gap between patient care and the computational research that makes new discoveries possible. 
+          As a Bioinformatician at the La Jolla Institute for Immunology, I develop analysis pipelines and tools to advance NIH-funded research. 
+          I approach biological data not just as code, but as the foundational stepping stone to clinical breakthroughs. ** Please note this site and myself are both works in progress.**
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4">

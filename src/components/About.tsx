@@ -42,7 +42,7 @@ export default function About() {
         </div>
 
         <div>
-          <h3 className="text-2xl font-display font-medium mb-8 text-foreground">Technical Arsenal</h3>
+          <h3 className="text-2xl font-display font-medium mb-8 text-foreground">Technical Skills</h3>
           <div className="space-y-8">
             <div>
               <h4 className="text-sm font-mono text-muted-foreground uppercase tracking-widest mb-4">Languages & Libraries</h4>
